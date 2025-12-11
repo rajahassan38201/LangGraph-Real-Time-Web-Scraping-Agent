@@ -14,7 +14,7 @@ from fastapi.responses import StreamingResponse
 from fastapi.middleware.cors import CORSMiddleware
 
 # Load API keys from .env file
-load_dotenv()
+load_dotenv() 
 
 # Initialize memory saver for checkpointing
 memory = MemorySaver()
@@ -156,4 +156,5 @@ async def chat_stream(message: str, checkpoint_id: Optional[str] = Query(None)):
 
 # Run the app
 if __name__ == "__main__":
+
     uvicorn.run(app, host="127.0.0.1", port=8000)
