@@ -12,7 +12,7 @@ from langchain_community.tools.tavily_search import TavilySearchResults
 from fastapi import FastAPI, Query
 from fastapi.responses import StreamingResponse
 from fastapi.middleware.cors import CORSMiddleware
-
+ 
 # Load API keys from .env file
 load_dotenv() 
 
@@ -158,3 +158,4 @@ async def chat_stream(message: str, checkpoint_id: Optional[str] = Query(None)):
 if __name__ == "__main__":
 
     uvicorn.run(app, host="127.0.0.1", port=8000)
+
