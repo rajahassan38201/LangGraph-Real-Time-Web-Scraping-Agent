@@ -2,7 +2,7 @@ import json
 import uvicorn
 from typing import TypedDict, Annotated, Optional
 from uuid import uuid4
-
+ 
 from langgraph.graph import add_messages, StateGraph, END
 from langgraph.checkpoint.memory import MemorySaver
 from langchain_openai import ChatOpenAI
@@ -158,6 +158,7 @@ async def chat_stream(message: str, checkpoint_id: Optional[str] = Query(None)):
 if __name__ == "__main__":
 
     uvicorn.run(app, host="127.0.0.1", port=8000)
+
 
 
 
