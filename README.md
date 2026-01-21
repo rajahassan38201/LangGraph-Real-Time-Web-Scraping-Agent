@@ -3,7 +3,7 @@
 https://github.com/user-attachments/assets/08c398c9-8102-4890-885e-425631fdbdfe
 
 This project is a 2-file, real-time web chat application. It uses **LangGraph** to create a stateful agent that can browse the internet using the **Tavily Search API** to answer user questions.
-
+ 
 The backend is built with **FastAPI** and streams responses using Server-Sent Events (SSE). The frontend is a single, self-contained **HTML file** using **Tailwind CSS** for styling and vanilla JavaScript to handle the real-time chat interface.
 
 ## 🚀 Features
